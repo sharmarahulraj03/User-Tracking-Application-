@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.assignment2ottawa.usertrackingapp.WelcomeUser"
+    android:background="#fab5ba">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USER ACTIVITY TRACKER"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        tools:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/cast_expanded_controller_control_button_margin"
+        android:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+
+
+    <TextView
+        android:text="Welcome to User Activity Tracking Application. This application will detect the user activity. You can test this application by Walking, Running, Driving and staying still. We thank you for using this application. "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView6"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="textStart" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:fontFamily="casual"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="*Please wait while your activity is detected."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_marginTop="43dp"
+        android:textStyle="normal|bold|italic"
+        android:fontFamily="casual"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/uottawa_logo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gifTextView"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
